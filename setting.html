@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>UniBite - Ρυθμίσεις</title>
+    <link rel="stylesheet" href="stl.css">
+</head>
+<body>
+    <div id="page-settings" class="app-page">
+        <div class="settings-modern-container">
+            <p class="settings-intro">Διαμορφώστε τις προσωπικές προτιμήσεις της εφαρμογής UniBite για μια καλύτερη εμπειρία πλοήγησης.</p>
+            <div class="settings-card">
+                <div class="settings-card-header">
+                    <span class="settings-icon"></span>
+                    <h3>Προτιμήσεις Εφαρμογής</h3>
+                </div>
+                <div class="settings-row">
+                    <div class="settings-info">
+                        <span class="settings-label">Γλώσσα Διεπαφής (Interface Language)</span>
+                        <span class="settings-sublabel">Επιλέξτε τη βασική γλώσσα εμφάνισης του ακαδημαϊκού portal.</span>
+                    </div>
+                    <div class="settings-action">
+                        <select class="settings-select" onchange="setLanguage(this.value)">
+                            <option value="el" selected>🇬🇷 Ελληνικά (Greek)</option>
+                            <option value="en">🇬🇧 English (Αγγλικά)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="settings-row">
+                    <div class="settings-info">
+                        <span class="settings-label">Σκοτεινή Λειτουργία (Dark Mode)</span>
+                        <span class="settings-sublabel">Προσαρμογή των χρωμάτων για ξεκούραστη ανάγνωση το βράδυ.</span>
+                    </div>
+                    <div class="settings-action">
+                        <label class="settings-switch">
+                            <input id="darkModeToggle" type="checkbox" onchange="toggleDarkMode()">
+                            <span class="settings-slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="settings-card">
+                <div class="settings-card-header">
+                    <span class="settings-icon"></span>
+                    <h3>Ειδοποιήσεις & Ασφάλεια</h3>
+                </div>
+                <div class="settings-row">
+                    <div class="settings-info">
+                        <span class="settings-label">Push Ειδοποιήσεις για Νέες Αγγελίες</span>
+                        <span class="settings-sublabel">Λάβετε ειδοποίηση μόλις ένας φοιτητής ανεβάσει μερίδα φαγητού στο τμήμα σας.</span>
+                    </div>
+                    <div class="settings-action">
+                        <label class="settings-switch">
+                            <input type="checkbox" checked>
+                            <span class="settings-slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="settings-row">
+                    <div class="settings-info">
+                        <span class="settings-label">Υπενθυμίσεις Αξιολόγησης Γεύματος</span>
+                        <span class="settings-sublabel">Ειδοποίηση για βαθμολόγηση εντός 48 ωρών, προς αποφυγή ποινής πόντων.</span>
+                    </div>
+                    <div class="settings-action">
+                        <label class="settings-switch">
+                            <input type="checkbox" checked>
+                            <span class="settings-slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="settings-row">
+                    <div class="settings-info">
+                        <span class="settings-label">Ειδοποιήσεις Email</span>
+                        <span class="settings-sublabel">Λήψη εβδομαδιαίων στατιστικών και ανακοινώσεων της κοινότητας UniBite.</span>
+                    </div>
+                    <div class="settings-action">
+                        <label class="settings-switch">
+                            <input type="checkbox">
+                            <span class="settings-slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="settings-card card-info-version">
+                <div class="settings-row no-border">
+                    <div class="settings-info">
+                        <span class="settings-label">UniBite Academic Portal — Έκδοση v2.4</span>
+                        <span class="settings-sublabel">Αναπτύχθηκε στα πλαίσια της εργασίας εξαμήνου. Όλα τα δικαιώματα διατηρούνται © 2026.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
