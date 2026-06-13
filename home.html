@@ -5,51 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>UniBite - Αρχική</title>
     <link rel="stylesheet" href="stl.css">
+    <link rel="stylesheet" href="s.css">
+    <script src="shared.js"></script>
 </head>
-<body>
-    <div id="page-home" class="app-page">
-        <div class="hero-section" id="unibiteIntroSection">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">Αυτό είναι το <span class="unibite-highlight">UNIBITE</span>!</h1>
-                    <p class="hero-description">Καλώς ορίσατε στην πλατφόρμα ανταλλαγής σπιτικού φαγητού της πανεπιστημιακής μας κοινότητας. Εδώ μπορείτε να μοιραστείτε ή να βρείτε γευστικά, σπιτικά γεύματα εύκολα και γρήγορα!</p>
+<body class="page-home">
 
-                    <div class="instructions-list">
-                        <div class="instruction-item">
-                            <div class="instruction-bullet">1</div>
-                            <div class="instruction-content">
-                                <h3>Περιήγηση</h3>
-                                <p>Πλοηγηθείτε στο μενού από την αριστερή πλευρά της οθόνης σας.</p>
+    <div class="app-container">
+        <div class="academic-top-bar">
+            <div class="window-logo">
+                <img src="logo.jpeg" alt="UniBite Logo" class="window-top-logo">
+            </div>
+            <div class="top-nav-menu">
+                <a class="top-nav-item active" href="home.html" data-key="menu_home">Αρχική</a>
+                <a class="top-nav-item" href="faq.html" data-key="menu_faq">Συχνές Ερωτήσεις</a>
+                <a class="top-nav-item" href="settings.html" data-key="menu_settings">Ρυθμίσεις</a>
+            </div>
+            <div class="top-bar-right">
+                <div class="navbar-right-controls"></div>
+            </div>
+        </div>
+
+        <button class="menu-btn" id="hamburgerBtn">
+            <span class="menu-icon">☰</span>
+        </button>
+
+        <div class="sidebar" id="sidebarMenu">
+            <a class="menu-item" href="consumer.html">
+                <span class="menu-icon-item"></span>
+                <span class="menu-text" data-key="menu_consumer_reserve">Όλες οι Αγγελίες</span>
+            </a>
+            <a class="menu-item" href="myorders.html">
+                <span class="menu-icon-item"></span>
+                <span class="menu-text" data-key="menu_orders">Οι Παραγγελίες μου</span>
+            </a>
+            <a class="menu-item" href="cook.html">
+                <span class="menu-icon-item"></span>
+                <span class="menu-text" data-key="menu_chef">Δημιούργησε Αγγελία</span>
+            </a>
+            <a class="menu-item" href="bonus.html">
+                <span class="menu-icon-item"></span>
+                <span class="menu-text" data-key="menu_bonus">Πόντοι & Επιβραβεύσεις</span>
+            </a>
+            <a class="menu-item" href="account.html">
+                <span class="menu-icon-item"></span>
+                <span class="menu-text" data-key="menu_account">Ο Λογαριασμός μου</span>
+            </a>
+            <a class="menu-item" href="login.html" id="logoutLink">
+                <span class="menu-icon-item"></span>
+                <span class="menu-text">Αποσύνδεση</span>
+            </a>
+            <a class="menu-item" href="admin.html" id="sidebarAdminLink" style="display:none;">
+                <span class="menu-icon-item"></span>
+                <span class="menu-text" data-key="menu_admin">Admin Dashboard</span>
+            </a>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="page-content" id="mainContent">
+
+            <div class="hero-section" id="unibiteIntroSection">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Αυτό είναι το <span class="unibite-highlight">UNIBITE</span>!</h1>
+                        <p class="hero-description">Καλώς ορίσατε στην πλατφόρμα ανταλλαγής σπιτικού φαγητού της πανεπιστημιακής μας κοινότητας. Εδώ μπορείτε να μοιραστείτε ή να βρείτε γευστικά, σπιτικά γεύματα εύκολα και γρήγορα!</p>
+
+                        <div class="instructions-list">
+                            <div class="instruction-item">
+                                <div class="instruction-bullet">1</div>
+                                <div class="instruction-content">
+                                    <h3>Περιήγηση</h3>
+                                    <p>Πλοηγηθείτε στο μενού από την αριστερή πλευρά της οθόνης σας.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="instruction-item">
-                            <div class="instruction-bullet">2</div>
-                            <div class="instruction-content">
-                                <h3>Αναζήτηση</h3>
-                                <p>Επιλέξτε "Όλες οι Αγγελίες" για να βρείτε διαθέσιμα φαγητά γύρω σας.</p>
+                            <div class="instruction-item">
+                                <div class="instruction-bullet">2</div>
+                                <div class="instruction-content">
+                                    <h3>Αναζήτηση</h3>
+                                    <p>Επιλέξτε "Όλες οι Αγγελίες" για να βρείτε διαθέσιμα φαγητά γύρω σας.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="instruction-item">
-                            <div class="instruction-bullet">3</div>
-                            <div class="instruction-content">
-                                <h3>Δημιουργία</h3>
-                                <p>Επιλέξτε "Δημιούργησε Αγγελία" για να προσφέρετε φαγητό σε άλλους φοιτητές.</p>
+                            <div class="instruction-item">
+                                <div class="instruction-bullet">3</div>
+                                <div class="instruction-content">
+                                    <h3>Δημιουργία</h3>
+                                    <p>Επιλέξτε "Δημιούργησε Αγγελία" για να προσφέρετε φαγητό σε άλλους φοιτητές.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="instruction-item">
-                            <div class="instruction-bullet">4</div>
-                            <div class="instruction-content">
-                                <h3>Παρακολούθηση</h3>
-                                <p>Δείτε τις κρατήσεις σας στο "Οι Παραγγελίες μου" και μαζέψτε πόντους!</p>
+                            <div class="instruction-item">
+                                <div class="instruction-bullet">4</div>
+                                <div class="instruction-content">
+                                    <h3>Παρακολούθηση</h3>
+                                    <p>Δείτε τις κρατήσεις σας στο "Οι Παραγγελίες μου" και μαζέψτε πόντους!</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="hero-image">
+                        <img src="foitites.png" alt="Φοιτητές UniBite" class="hero-img">
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="foitites.png" alt="Φοιτητές UniBite" class="hero-img">
-            </div>
+
         </div>
     </div>
+
+    <div id="customAlertModal" class="modal-backup">
+        <div class="modal-content-alert">
+            <div id="modalAlertIcon" class="modal-alert-icon">💡</div>
+            <h3 id="modalAlertTitle" class="modal-alert-title">Ενημέρωση</h3>
+            <p id="modalAlertMessage" class="modal-alert-message">Μήνυμα...</p>
+            <button class="modal-alert-btn" onclick="closeCustomAlert()">Έγινε</button>
+        </div>
+    </div>
+
+    <script src="shared.js"></script>
 </body>
 </html>
