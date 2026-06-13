@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>UniBite - Ο Λογαριασμός μου</title>
+    <link rel="stylesheet" href="stl.css">
+</head>
+<body>
+    <div id="page-account" class="app-page">
+        <div class="academic-profile-wrapper">
+            <div class="academic-grid-top">
+                <div class="academic-card card-avatar-accent">
+                    <div class="academic-card-avatar-zone">
+                        <div class="academic-avatar-wrapper">
+                            <div class="academic-avatar-letter" id="profileAvatarLetter"></div>
+                            <div class="academic-verified-badge">✓</div>
+                        </div>
+                        <h3 class="academic-profile-name" id="profileNameDisplay"></h3>
+                        <p class="academic-profile-sub" id="profileRoleSub">Φοιτητής UniBite</p>
+                        <span class="academic-role-badge">Verified Academic Member</span>
+                        <div class="academic-user-stats">
+                            <div class="stat-box">
+                                <span class="stat-number" id="profilePoints">–</span>
+                                <span class="stat-label">Πόντοι</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number" id="profileOffered">–</span>
+                                <span class="stat-label">Προσφορές</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number" id="profileReceived">–</span>
+                                <span class="stat-label">Λήψεις</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="academic-card card-info-accent">
+                    <h3 class="academic-card-title">Ακαδημαϊκά Στοιχεία</h3>
+                    <table class="academic-table">
+                        <tr>
+                            <td class="academic-label">Όνομα Χρήστη</td>
+                            <td class="academic-value" id="profileUsername"></td>
+                        </tr>
+                        <tr>
+                            <td class="academic-label">Ιδρυματικό E-mail</td>
+                            <td class="academic-value" id="profileEmail"></td>
+                        </tr>
+                        <tr>
+                            <td class="academic-label">Αριθμός Μητρώου</td>
+                            <td class="academic-value" id="profileAM"></td>
+                        </tr>
+                        <tr>
+                            <td class="academic-label">Τμήμα / Σχολή</td>
+                            <td class="academic-value" id="profileDept"></td>
+                        </tr>
+                        <tr>
+                            <td class="academic-label">Ημερομηνία Εγγραφής</td>
+                            <td class="academic-value" id="profileRegDate"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="academic-card-full">
+                <h3 style="color: #dc2626; font-size: 18px; margin-bottom: 10px;">Επικίνδυνη Ζώνη</h3>
+                <p class="delete-warning-text">Για να διαγραφείτε οριστικά από την πλατφόρμα UniBite, παρακαλούμε πατήστε το παρακάτω κουμπί. Η ενέργεια αυτή είναι μη αναστρέψιμη.</p>
+                <button class="academic-btn-delete" onclick="confirmDeleteAccount()">Διαγραφή λογαριασμού</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
